@@ -10,7 +10,7 @@ summary(data)
 datetime <- paste(as.Date(data$Date), data$Time)
 data$Datetime <- as.POSIXct(datetime)
 #get a visual of plot
-hist(data$Global_active_power, col = "blue", xlab = "Global Active Power (Kilowatts)", 
+hist(data$Global_active_power, col = "red", xlab = "Global Active Power (Kilowatts)", 
      main = "Global Active Power")
 #save in png
 png("plot1.png", width=480, height=480)
